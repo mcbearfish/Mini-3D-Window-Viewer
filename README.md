@@ -1,4 +1,4 @@
-# Mini-3D-Window-Viewer
+# AR Viewer
 
 Notes: 
 PBC Design video: https://www.youtube.com/watch?v=aVUqaB0IMh4
