@@ -22,29 +22,47 @@ When placed on a flat surface, the device on startup will create a window into a
 ## Circuit Design
 ### Version 1
 #### STM32 Circuit
-<img width="568" height="762" alt="image" src="https://github.com/user-attachments/assets/303fddad-d7d7-4e21-b84f-9480f5f74530" />
+<img width="568" height="762" alt="image" src="https://github.com/user-attachments/assets/303fddad-d7d7-4e21-b84f-9480f5f74530" /><br />
 This STM32 chip was chosen for its large size of pinouts and processing capabilities.
 
 #### Button
+<img width="395" height="284" alt="image" src="https://github.com/user-attachments/assets/5bae4b5d-869c-40eb-963d-ae59cf6c7e4d" /><br />
+Simple Button circuit to test user inputs. Will be used later to 'zero' location of 3D object in virtual space.
 
 #### LEDs
+<img width="230" height="294" alt="image" src="https://github.com/user-attachments/assets/852c60a7-4242-4d3a-8030-189382736d24" /><br />
+Will be used to for inital testing and debugging.
 
 #### Crystal Oscciallator
+<img width="437" height="283" alt="image" src="https://github.com/user-attachments/assets/d24f10df-7c6e-48a1-9470-f4daef24d1ee" /><br />
+Provide a highly stable, accurate, and precise frequency reference.
 
 #### USB-C Connector
+<img width="532" height="365" alt="image" src="https://github.com/user-attachments/assets/a12726bb-a4ad-47a6-8967-1e452fd64ac1" /><br />
+Provides power to board.
 
 #### Boot Switch
+<img width="235" height="160" alt="image" src="https://github.com/user-attachments/assets/f280e3e0-6fc7-4074-b2d5-349e042cced1" /><br />
+Reset switch.
 
 #### Mounting Holes
+<img width="216" height="184" alt="image" src="https://github.com/user-attachments/assets/3dc0a0be-8cf3-4cd5-a20a-b994358961eb" /><br />
+Grounded pads to use for mounting and probe testing.
 
 #### Pin Connectors
+<img width="692" height="404" alt="image" src="https://github.com/user-attachments/assets/e253e8ae-4975-4d4d-a1a5-3d6586c90698" /><br />
 
 #### Buck Converter
+<img width="657" height="296" alt="image" src="https://github.com/user-attachments/assets/c418947c-6b7b-45a5-82bc-9ea7d88593ff" /><br />
 
 #### Sensors
 
 #### Notes
+I found Google's Gemini AI tool to be extremely helpful during  this design process. Especially with mapping the pinout of the display to STM32. I used a cheap knockoff with no documentation and poor pinout labels. In the future may need to remap pins if display fails to work.See ARSensors project for 2nd Board meant to connect sensors to this main board.
 
+#### Main PCB
+
+#### Sensors PCB
 
 
 ## Code
