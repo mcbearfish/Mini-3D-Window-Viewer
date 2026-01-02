@@ -54,12 +54,15 @@ Grounded pads to use for mounting and probe testing.
 
 #### Buck Converter
 <img width="657" height="296" alt="image" src="https://github.com/user-attachments/assets/c418947c-6b7b-45a5-82bc-9ea7d88593ff" /><br />
+Chosen to smooth 5V to 3.3V for STM32 chip and sensors.
 
 #### Accelerometer and Gyroscope
 <img width="751" height="352" alt="image" src="https://github.com/user-attachments/assets/b40b9d26-4685-462b-91da-61180e5c4c62" /><br />
+Chosen to track real time postion of board as it moves around in space.
 
 #### Magnetometer
 <img width="786" height="343" alt="image" src="https://github.com/user-attachments/assets/e504e925-99b6-4897-b088-bd03f4eafa38" /><br />
+Chosen to help track real time postion of board as it moves around in space. Will help to correct any drift when running accelermeter and gyroscope for long times.
 
 #### Pin Connector
 <img width="611" height="399" alt="image" src="https://github.com/user-attachments/assets/15865bf0-0dd7-4b5c-87a7-4108525f2891" /><br />
