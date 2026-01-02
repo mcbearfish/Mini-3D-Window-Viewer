@@ -3,7 +3,7 @@
 *Order for Version 1 has been placed. Will post Updates on here when boards are recieved.
 
 # Table of Contents
--[#About].
+-[About](#about)
 -Project Scope.
 -Circuit Design.
 -Code.
