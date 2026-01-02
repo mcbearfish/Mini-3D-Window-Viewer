@@ -3,11 +3,11 @@
 *Order for Version 1 has been placed. Will post Updates on here when boards are recieved.
 
 # Table of Contents
--[#About]
--Project Scope
--Circuit Design
--Code
--Reflections
+-[#About].
+-Project Scope.
+-Circuit Design.
+-Code.
+-Reflections.
 
 ## About
 
