@@ -19,7 +19,29 @@ This project is the Alternate Reality Viewer.<br />
 
 ## Circuit Design
 ### Version 1
-#### 
+#### STM32 Circuit
+
+#### Button
+
+#### LEDs
+
+#### Crystal Oscciallator
+
+#### USB-C Connector
+
+#### Boot Switch
+
+#### Mounting Holes
+
+#### Pin Connectors
+
+#### Buck Converter
+
+#### Sensors
+
+#### Notes
+
+
 
 ## Code
 * Waiting for Version 1 boards to arrive.<br />
@@ -36,7 +58,7 @@ For the STM32 I first connected any power related pins and decoupling capacitors
 
 Next I added the sensors. I found the datasheets to be extremely helpful. The design process was made much easier by following the typical application circuits that they detailed. Then I added the display, button, and some LEDs. The extra LEDs and button will be useful at the start of programming to make sure the board can properly run code and debug. Lastly I added a connector for debug pins.<br />
 
-Now that I had a schematic to follow I moved onto the PCB layout. This portion was much more difficult than expected. It was at this point I had to take into account physical and cost restrictions. JLCPCB was my choice of board manufacturer. To minimize costs I decided on a 2 layer board, which gave me a lot of physical trace constraints.  Also, since the sensors are a bit costly, I decided to move them to a second circuit board to save on future costs. With these new challenges I had to go back to my schematic and STM32CubeMX. Unfortunately I was not able to place my STM32 pinouts more conviently to minimize trace crossovers. At his point I decided to go with a more generic pin layout that I can wire with some 2.54mm connectors to minimize my trace lengths and crossovers.<br />
+Now that I had a schematic to follow I moved onto the PCB layout. This portion was much more difficult than expected. It was at this point I had to take into account physical and cost restrictions. JLCPCB was my choice of board manufacturer. To minimize costs I decided on a 2 layer board, which gave me a lot of physical trace constraints.  Also, since the sensors are a bit costly, I decided to move them to a second circuit board to save on future costs. With these new challenges I had to go back to my schematic and STM32CubeMX. Unfortunately I was not able to place my STM32 pinouts more conviently to minimize trace crossovers. At his point I decided to go with a more generic pin layout that I can wire with some 2.54mm connectors to minimize my trace lengths and crossovers. In the future I will look at more layered boards or other STM32 chips as potential solutions.<br />
 
 To minmize costs on JLCPCB I tried to idently basic parts in the JLCPCB library. Not all parts selected were in that and drove up the cost (~$3 per part not in the basic library). In the future I will place more emphasis on this to lower my costs.<br />
 
