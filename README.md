@@ -55,10 +55,22 @@ Grounded pads to use for mounting and probe testing.
 #### Buck Converter
 <img width="657" height="296" alt="image" src="https://github.com/user-attachments/assets/c418947c-6b7b-45a5-82bc-9ea7d88593ff" /><br />
 
-#### Sensors
+#### Accelerometer and Gyroscope
+<img width="751" height="352" alt="image" src="https://github.com/user-attachments/assets/b40b9d26-4685-462b-91da-61180e5c4c62" /><br />
+
+#### Magnetometer
+<img width="786" height="343" alt="image" src="https://github.com/user-attachments/assets/e504e925-99b6-4897-b088-bd03f4eafa38" /><br />
+
+#### Pin Connector
+<img width="611" height="399" alt="image" src="https://github.com/user-attachments/assets/15865bf0-0dd7-4b5c-87a7-4108525f2891" /><br />
+
+#### Mounting Holes
+<img width="315" height="238" alt="image" src="https://github.com/user-attachments/assets/3162fb25-4d3a-4de8-ade6-60f83bad134b" /><br />
 
 #### Notes
-I found Google's Gemini AI tool to be extremely helpful during  this design process. Especially with mapping the pinout of the display to STM32. I used a cheap knockoff with no documentation and poor pinout labels. In the future may need to remap pins if display fails to work.See ARSensors project for 2nd Board meant to connect sensors to this main board.
+I found Google's Gemini AI tool to be extremely helpful during  this design process. Especially with mapping the pinout of the display to STM32. I used a cheap knockoff with no documentation and poor pinout labels. In the future may need to remap pins if display fails to work.See ARSensors project for 2nd Board meant to connect sensors to this main board.<br />
+
+Manfucaturing files can be found for each board in this repository.<br />
 
 #### Main PCB
 <img width="682" height="646" alt="image" src="https://github.com/user-attachments/assets/9e0afbe1-164e-45d2-b050-79085eeee85b" /><br />
@@ -70,7 +82,13 @@ I found Google's Gemini AI tool to be extremely helpful during  this design proc
 <img width="924" height="828" alt="image" src="https://github.com/user-attachments/assets/83dcfbf9-5c89-470f-a855-a063bfe16aad" /><br />
 
 #### Sensors PCB
+<img width="476" height="511" alt="image" src="https://github.com/user-attachments/assets/01913261-0ae3-470a-b881-d836e78dffa2" /><br />
 
+<img width="712" height="757" alt="image" src="https://github.com/user-attachments/assets/bd685a8c-0c97-4eeb-9e0f-ecbf7dc5b131" /><br />
+
+<img width="712" height="757" alt="image" src="https://github.com/user-attachments/assets/cf4fe37a-f3e2-44ea-a555-c659f44f0613" /><br />
+
+<img width="712" height="757" alt="image" src="https://github.com/user-attachments/assets/0e8da07b-4ea0-4321-ae73-0175a2d32cb0" /><br />
 
 ## Code
 * Waiting for Version 1 boards to arrive.<br />
