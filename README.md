@@ -4,7 +4,7 @@
 
 # Table of Contents
 -[About](#about)<br />
--[Project Scope](#Projecct-Scope)<br />
+-[Project Description](#Projecct-Description)<br />
 -[Circuit Design](#Circuit-Design)<br />
 -[Code](#Code)<br />
 -[Reflections](#Reflections)
@@ -14,8 +14,10 @@ This is a developmental project intended to refresh my skills on designing and p
 
 If you stumble across this project feel free to use it for educationl purposes. If you find errors or have questions about the circuit design or code feel free to reach out. Please cite this repository as a source if you plan to use it.<br />
 
-## Project Scope
+## Project Description
 This project is the Alternate Reality Viewer.<br />
+
+When placed on a flat surface, the device on startup will create a window into an alternate reality. The device will have a screen that a user can hold and move around the starting point to view a 3D object. As the user moves around it will be like the object was placed right in front of them.<br />
 
 ## Circuit Design
 ### Version 1
