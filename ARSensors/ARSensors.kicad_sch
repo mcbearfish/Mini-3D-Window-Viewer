@@ -5,7 +5,7 @@
 	(uuid "abc22896-b363-4903-941f-8662f0624848")
 	(paper "A4")
 	(lib_symbols
-		(symbol "2025-12-07_01-57-28:LSM6DSRTR"
+		(symbol "2026-01-01_23-09-05:LSM6DSRTR"
 			(pin_names
 				(offset 0.254)
 			)
@@ -387,7 +387,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "2025-12-07_02-05-02:LIS3MDLTR"
+		(symbol "2026-01-01_23-09-18:LIS3MDLTR"
 			(pin_names
 				(offset 0.254)
 			)
@@ -1749,7 +1749,7 @@
 	)
 	(rectangle
 		(start 172.72 99.06)
-		(end 212.09 137.16)
+		(end 212.09 128.27)
 		(stroke
 			(width 0)
 			(type dash)
@@ -1922,12 +1922,6 @@
 		(uuid "74e4ecc5-1a07-4e33-8571-567b416fb7ae")
 	)
 	(junction
-		(at 180.34 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "76515a9a-b343-44b5-acdf-984799c72230")
-	)
-	(junction
 		(at 66.04 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1944,12 +1938,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b2e56314-d62b-4872-a521-3a2776c58765")
-	)
-	(junction
-		(at 180.34 121.92)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "b8dc502f-4851-4f8d-904f-b4fe5fe92aac")
 	)
 	(junction
 		(at 41.91 50.8)
@@ -2153,16 +2141,6 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 121.92) (xy 180.34 121.92)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "249481ca-4f0b-4456-86c6-6b9767e01287")
-	)
-	(wire
-		(pts
 			(xy 46.99 45.72) (xy 67.31 45.72)
 		)
 		(stroke
@@ -2180,16 +2158,6 @@
 			(type default)
 		)
 		(uuid "28441306-35a3-46ea-9936-a5a5acd11879")
-	)
-	(wire
-		(pts
-			(xy 182.88 128.27) (xy 180.34 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2d155b8a-aa83-4a14-bc27-74a9ed28ed05")
 	)
 	(wire
 		(pts
@@ -2230,16 +2198,6 @@
 			(type default)
 		)
 		(uuid "3b5422ed-c604-4979-be0d-7b1d6b3dfbeb")
-	)
-	(wire
-		(pts
-			(xy 180.34 128.27) (xy 180.34 130.81)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3f7f5a14-6a91-43fc-a82c-49bdcabf0486")
 	)
 	(wire
 		(pts
@@ -2450,16 +2408,6 @@
 			(type default)
 		)
 		(uuid "b7e0f305-5e0c-4004-9e7a-1f75080b48a7")
-	)
-	(wire
-		(pts
-			(xy 180.34 121.92) (xy 180.34 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b90a7be4-04db-46e0-b2a1-bb5de7ff2cf2")
 	)
 	(wire
 		(pts
@@ -3006,7 +2954,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 42.8752 59.69 0)
 			(effects
 				(font
@@ -3182,105 +3130,6 @@
 		)
 	)
 	(symbol
-		(lib_id "2025-12-07_02-05-02:LIS3MDLTR")
-		(at 63.5 101.6 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "1785283f-8e9b-4b05-8221-8366252d5029")
-		(property "Reference" "U1"
-			(at 114.046 94.742 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "LIS3MDLTR"
-			(at 109.982 121.666 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "LGA-12_2X2X1_STM"
-			(at 63.5 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/lis3mdl.pdf"
-			(at 63.5 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 63.5 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "c71e1d0e-1fc2-4722-85f7-fa129e729569")
-		)
-		(pin "2"
-			(uuid "feb7169b-e835-4185-a04a-1926a3b2c8a2")
-		)
-		(pin "9"
-			(uuid "bfa54d8e-6909-48b0-8f02-f593f4548fbe")
-		)
-		(pin "6"
-			(uuid "16bc56db-5de9-4c3b-b687-33d01b7daa4e")
-		)
-		(pin "7"
-			(uuid "8bea452a-5fb5-4a9b-aeb3-f06539f5065a")
-		)
-		(pin "11"
-			(uuid "43a6c888-8a0f-431d-ac2c-bd7de91efd7a")
-		)
-		(pin "5"
-			(uuid "67ae2a9c-7b0d-4902-990e-8614a9c27c7b")
-		)
-		(pin "3"
-			(uuid "6ac624f1-b317-4526-b7c2-58c3f77df418")
-		)
-		(pin "8"
-			(uuid "3ea85c66-7b64-4e3e-8ab9-c62855a3a9fe")
-		)
-		(pin "12"
-			(uuid "2c64a623-094d-4243-a5b0-7e7f5d66ab5c")
-		)
-		(pin "4"
-			(uuid "42a8a58b-05d6-4c8a-a0af-338d68eccaac")
-		)
-		(pin "10"
-			(uuid "860fa7fc-550f-4599-b759-ed439d97e93f")
-		)
-		(instances
-			(project "ARSensors"
-				(path "/abc22896-b363-4903-941f-8662f0624848"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 205.74 40.64 0)
 		(unit 1)
@@ -3308,7 +3157,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 203.962 40.64 90)
 			(effects
 				(font
@@ -3617,111 +3466,6 @@
 		)
 	)
 	(symbol
-		(lib_id "2025-12-07_01-57-28:LSM6DSRTR")
-		(at 67.31 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "32ab0361-53f7-48be-98de-a40662ce845c")
-		(property "Reference" "U2"
-			(at 108.458 33.782 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "LSM6DSRTR"
-			(at 103.886 62.992 0)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "LGA-14L_2P5X3X0P83_STM"
-			(at 67.31 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.st.com/resource/en/datasheet/lsm6dsr.pdf"
-			(at 67.31 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 67.31 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "81c3bea6-5ded-45f8-be29-0a0a8d80f460")
-		)
-		(pin "2"
-			(uuid "ea2a9fc3-8ef6-4367-86b1-e7761ee4a1ad")
-		)
-		(pin "14"
-			(uuid "9531dbf9-f533-4430-acc3-53833da74301")
-		)
-		(pin "11"
-			(uuid "02729018-e676-44ba-84ca-ce10b8004ec5")
-		)
-		(pin "10"
-			(uuid "b7434849-0adc-40db-b397-f9aaca8888ac")
-		)
-		(pin "7"
-			(uuid "5e711e09-37ce-4822-a878-255f35c384c1")
-		)
-		(pin "8"
-			(uuid "af9dbb0d-537b-44bb-8e78-2d6d0c5337df")
-		)
-		(pin "1"
-			(uuid "a44c9ff5-a2a3-4761-90e2-afd4623aa889")
-		)
-		(pin "13"
-			(uuid "4e1a9630-1815-457f-94dc-6154b0986052")
-		)
-		(pin "5"
-			(uuid "4d15a2d8-da70-4ba8-8abf-469a163047d1")
-		)
-		(pin "4"
-			(uuid "d7793617-1d16-41a7-afc3-c8979d701986")
-		)
-		(pin "6"
-			(uuid "0d3048e6-4d56-47d1-8569-9ac33225de61")
-		)
-		(pin "12"
-			(uuid "59175635-d6ae-49a3-8091-a578c9b05058")
-		)
-		(pin "9"
-			(uuid "c9bb8b96-12ad-4940-b627-59eafa561659")
-		)
-		(instances
-			(project "ARSensors"
-				(path "/abc22896-b363-4903-941f-8662f0624848"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3.3V")
 		(at 140.97 100.33 0)
 		(unit 1)
@@ -3788,6 +3532,210 @@
 		)
 	)
 	(symbol
+		(lib_id "2026-01-01_23-09-18:LIS3MDLTR")
+		(at 63.5 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "540e050b-30c3-49e8-ae33-d03c0ba7c678")
+		(property "Reference" "U2"
+			(at 94.234 94.488 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "LIS3MDLTR"
+			(at 110.49 121.412 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "footprints1:LGA-12_2X2X1_STM"
+			(at 63.5 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/lis3mdl.pdf"
+			(at 63.5 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 63.5 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "11"
+			(uuid "87c4c897-cb5f-46c6-8856-56723d6da7fa")
+		)
+		(pin "9"
+			(uuid "f6de610d-8496-4a97-98f7-8184cfab8e5a")
+		)
+		(pin "8"
+			(uuid "fe22daee-13b0-4d85-a64b-e6111d5877c8")
+		)
+		(pin "10"
+			(uuid "c91db06a-a20f-40e1-ab39-85780842d4d1")
+		)
+		(pin "12"
+			(uuid "20c68380-3efe-4050-be5c-005ac64a566c")
+		)
+		(pin "7"
+			(uuid "52eb1a34-b86b-4e3d-ae49-7e0860fbac98")
+		)
+		(pin "4"
+			(uuid "7fed7aae-0273-447d-b5bd-7f047a38627e")
+		)
+		(pin "3"
+			(uuid "452c324f-ae47-40dd-a9de-c53b2aa0f777")
+		)
+		(pin "2"
+			(uuid "de21389d-7d33-4954-88c4-33c601c10cb5")
+		)
+		(pin "1"
+			(uuid "9b71866a-e7f2-425f-a0fc-1fbe94d04f61")
+		)
+		(pin "6"
+			(uuid "4e7f01b4-95c4-429c-a512-51a515a0713c")
+		)
+		(pin "5"
+			(uuid "1f206e27-4baf-47bb-92ca-da0d6d8efb44")
+		)
+		(instances
+			(project ""
+				(path "/abc22896-b363-4903-941f-8662f0624848"
+					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "2026-01-01_23-09-05:LSM6DSRTR")
+		(at 67.31 40.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "548690d1-63dd-415b-b223-db9e7897bd83")
+		(property "Reference" "U3"
+			(at 93.218 33.274 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "LSM6DSRTR"
+			(at 104.14 62.992 0)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "footprints:LGA-14L_2P5X3X0P83_STM"
+			(at 67.31 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.st.com/resource/en/datasheet/lsm6dsr.pdf"
+			(at 67.31 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 67.31 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "12"
+			(uuid "db610152-3cda-4f84-8eab-929f31eaff47")
+		)
+		(pin "9"
+			(uuid "a46a6bf7-8f7d-4008-849c-14d61f48f26a")
+		)
+		(pin "13"
+			(uuid "e6fd58bb-1fa0-45a4-b824-4075fed50f66")
+		)
+		(pin "10"
+			(uuid "e02184b2-ba84-439e-8ba3-5268d5be28a6")
+		)
+		(pin "5"
+			(uuid "fcdb9e73-724f-4fa4-bd9f-6be15407d437")
+		)
+		(pin "3"
+			(uuid "973e98ef-611e-4c4b-9b02-447b1b8d71c9")
+		)
+		(pin "2"
+			(uuid "8653a5f3-c10d-4c7f-b473-50547d72a549")
+		)
+		(pin "1"
+			(uuid "1bd42858-8ccf-438d-8ade-718cd7853be6")
+		)
+		(pin "7"
+			(uuid "f66e8364-2ed2-42f5-a54a-1e9d407e98a0")
+		)
+		(pin "6"
+			(uuid "1e243c04-805d-474f-b85a-20f0c6b8f838")
+		)
+		(pin "4"
+			(uuid "6cf17a68-2c0d-4d7f-8b4e-8f1bd2cb20ca")
+		)
+		(pin "14"
+			(uuid "9dc0793d-b0d0-4fec-a003-2d0cbb085b27")
+		)
+		(pin "8"
+			(uuid "479d3001-d3aa-4de6-92a2-726796a5a121")
+		)
+		(pin "11"
+			(uuid "73847bb0-f7f8-4cb8-bfb3-dd87ab355505")
+		)
+		(instances
+			(project ""
+				(path "/abc22896-b363-4903-941f-8662f0624848"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 59.69 123.19 0)
 		(unit 1)
@@ -3814,7 +3762,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 60.6552 127 0)
 			(effects
 				(font
@@ -3851,72 +3799,6 @@
 			(project "ARSensors"
 				(path "/abc22896-b363-4903-941f-8662f0624848"
 					(reference "C4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 185.42 121.92 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "63f90b07-bb1a-4eef-884e-df67a9207382")
-		(property "Reference" "H3"
-			(at 189.23 120.6499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 189.23 123.1899 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
-			(at 185.42 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 185.42 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 185.42 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "06463052-c402-4ab7-ab01-18225bc6808a")
-		)
-		(instances
-			(project "ARSensors"
-				(path "/abc22896-b363-4903-941f-8662f0624848"
-					(reference "H3")
 					(unit 1)
 				)
 			)
@@ -4083,7 +3965,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 139.3952 66.04 0)
 			(effects
 				(font
@@ -4153,7 +4035,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x08_P2.54mm_Vertical"
 			(at 238.76 59.69 0)
 			(effects
 				(font
@@ -4240,7 +4122,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 37.7952 119.38 0)
 			(effects
 				(font
@@ -4550,7 +4432,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 180.34 130.81 0)
+		(at 180.34 121.92 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4558,7 +4440,7 @@
 		(dnp no)
 		(uuid "b97637cb-346c-4eb1-8192-d84ea607f029")
 		(property "Reference" "#PWR013"
-			(at 180.34 137.16 0)
+			(at 180.34 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4567,7 +4449,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 180.34 134.62 0)
+			(at 180.34 125.73 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4576,7 +4458,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 180.34 130.81 0)
+			(at 180.34 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4585,7 +4467,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 180.34 130.81 0)
+			(at 180.34 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4594,7 +4476,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 180.34 130.81 0)
+			(at 180.34 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4707,7 +4589,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 212.852 40.64 90)
 			(effects
 				(font
@@ -4948,72 +4830,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Mechanical:MountingHole_Pad")
-		(at 185.42 128.27 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "dd9e69cd-8afd-4364-aa6b-ae9d1963a705")
-		(property "Reference" "H4"
-			(at 189.23 126.9999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MountingHole_Pad"
-			(at 189.23 129.5399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "MountingHole:MountingHole_4.3mm_M4_Pad_Via"
-			(at 185.42 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 185.42 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 185.42 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "31d9d26d-0281-4d0e-a9a1-148883283928")
-		)
-		(instances
-			(project "ARSensors"
-				(path "/abc22896-b363-4903-941f-8662f0624848"
-					(reference "H4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 229.87 41.91 270)
 		(unit 1)
@@ -5174,7 +4990,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
 			(at 50.4952 127 0)
 			(effects
 				(font
