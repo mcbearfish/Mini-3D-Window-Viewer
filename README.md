@@ -61,6 +61,13 @@ Grounded pads to use for mounting and probe testing.
 I found Google's Gemini AI tool to be extremely helpful during  this design process. Especially with mapping the pinout of the display to STM32. I used a cheap knockoff with no documentation and poor pinout labels. In the future may need to remap pins if display fails to work.See ARSensors project for 2nd Board meant to connect sensors to this main board.
 
 #### Main PCB
+<img width="682" height="646" alt="image" src="https://github.com/user-attachments/assets/9e0afbe1-164e-45d2-b050-79085eeee85b" /><br />
+
+<img width="924" height="828" alt="image" src="https://github.com/user-attachments/assets/3d0f7357-d871-41f3-9d02-1b833b7dc475" /><br />
+
+<img width="924" height="828" alt="image" src="https://github.com/user-attachments/assets/b82c7a2e-9e28-4dab-b74b-71838d88a736" /><br />
+
+<img width="924" height="828" alt="image" src="https://github.com/user-attachments/assets/83dcfbf9-5c89-470f-a855-a063bfe16aad" /><br />
 
 #### Sensors PCB
 
