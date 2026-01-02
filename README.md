@@ -22,6 +22,8 @@ When placed on a flat surface, the device on startup will create a window into a
 ## Circuit Design
 ### Version 1
 #### STM32 Circuit
+<img width="568" height="762" alt="image" src="https://github.com/user-attachments/assets/303fddad-d7d7-4e21-b84f-9480f5f74530" />
+This STM32 chip was chosen for its large size of pinouts and processing capabilities.
 
 #### Button
 
