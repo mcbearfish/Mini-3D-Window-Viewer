@@ -1,8 +1,0 @@
-{
-	"InstallScripts" : 
-	[
-		"/home/jack/Documents/Mini-3D-Window-Viewer-main/ARviewercode/build/Debug/cmake_install.cmake",
-		"/home/jack/Documents/Mini-3D-Window-Viewer-main/ARviewercode/build/Debug/cmake/stm32cubemx/cmake_install.cmake"
-	],
-	"Parallel" : false
-}
