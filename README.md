@@ -1,6 +1,6 @@
-# AR Viewer
+# 3D Window
 
-*Order for Version 1 has been placed. Will post Updates on here when boards are recieved.
+# Demo Video
 
 # Table of Contents
 -[About](#about)<br />
