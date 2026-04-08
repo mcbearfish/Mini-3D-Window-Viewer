@@ -121,6 +121,11 @@ To minmize costs on JLCPCB I tried to idently basic parts in the JLCPCB library.
 Major Credit to Phil's Lab PBC Design video: https://www.youtube.com/watch?v=aVUqaB0IMh4. This was a great refresher on circuit board design and I highly recommend his channel.<br />
 
 #### Soldering and Assembly
+When ordering the board I decided that to save on costs to I would hand solder some of the components. This involved things the STM32 chip, USB-C connector, async buck convertor, buttons, and pins. I felt this was a great skill refresher. I took it slow and steady. I started with easier items like the pins and buttons to get back into the flow of things. The picture below is from right before I went to solder the STM chip.<br />
+<img width="608" height="569" alt="image" src="https://github.com/user-attachments/assets/7197c4ce-4d4f-4999-8ae8-337b23b1696f" /><br />
+
+I bought a cheap soldering station and found it pretty useful when adding the smaller components. In the picture below you can see a cheaper soldering iron. I found this ok for the larger components but, I decided it was safer to spend the money and get a proper iron for the delicate items like the USB-C and STM32 chip.<br />
+<img width="665" height="530" alt="image" src="https://github.com/user-attachments/assets/71d7bfaa-2d15-4635-99d2-65914d4bc8ba" /><br />
 
 ### Code Design
 
