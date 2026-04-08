@@ -1,7 +1,4 @@
-# 3D Window
-
-# Demo Video
-
+# 3D Window Project
 # Table of Contents
 -[About](#about)<br />
 -[Project Description](#Project-Description)<br />
