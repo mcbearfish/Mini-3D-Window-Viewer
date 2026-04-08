@@ -4,7 +4,7 @@
 -[Project Description](#Project-Description)<br />
 -[Demo Video](#Demo-Video)<br />
 -[Circuit Design](#Circuit-Design)<br />
--[Code](#Code)<br />
+-[Code Design](#Code)<br />
 -[Reflections](#Reflections)
 
 ## About
@@ -97,10 +97,13 @@ Manfucaturing files can be found for each board in this repository.<br />
 <img width="712" height="757" alt="image" src="https://github.com/user-attachments/assets/0e8da07b-4ea0-4321-ae73-0175a2d32cb0" /><br />
 
 ## Code
-* Waiting for Version 1 boards to arrive.<br />
+
+#### Code Flowchart
+
 
 ## Reflections
 ### Circuit Design Version 1
+#### Design Process
 Designing my first board in almost 4 years was a great experience. In the workspace I have been living in a more software heavy environment. I found this project to be a great refresher of my skills.<br />
 
 I found the inital research phase to be quite enjoyable and straightforward. I easily identified the types of sensors, display, and STM32 chip I thought would be capable for the performance I wanted. Now that I identified the key components it was time to begin creating the schematic.<br />
@@ -116,3 +119,15 @@ Now that I had a schematic to follow I moved onto the PCB layout. This portion w
 To minmize costs on JLCPCB I tried to idently basic parts in the JLCPCB library. Not all parts selected were in that and drove up the cost (~$3 per part not in the basic library). In the future I will place more emphasis on this to lower my costs.<br />
 
 Major Credit to Phil's Lab PBC Design video: https://www.youtube.com/watch?v=aVUqaB0IMh4. This was a great refresher on circuit board design and I highly recommend his channel.<br />
+
+#### Soldering and Assembly
+
+### Code Design
+
+#### Inital Project Scope
+
+#### Limitations of IMU Sensors
+
+#### Redesign
+
+#### Extra Notes
