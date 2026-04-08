@@ -4,7 +4,8 @@
 
 # Table of Contents
 -[About](#about)<br />
--[Project Description](#Projecct-Description)<br />
+-[Project Description](#Project-Description)<br />
+-[Demo Video](#Demo-Video)<br />
 -[Circuit Design](#Circuit-Design)<br />
 -[Code](#Code)<br />
 -[Reflections](#Reflections)
@@ -15,12 +16,17 @@ This is a developmental project intended to refresh my skills on designing and p
 If you stumble across this project feel free to use it for educationl purposes. If you find errors or have questions about the circuit design or code feel free to reach out. Please cite this repository as a source if you plan to use it.<br />
 
 ## Project Description
-This project is the Alternate Reality Viewer.<br />
+This project is the 3D Window Viewer.<br />
 
-When placed on a flat surface, the device on startup will create a window into an alternate reality. The device will have a screen that a user can hold and move around the starting point to view a 3D object. As the user moves around it will be like the object was placed right in front of them.<br />
+When placed on a flat surface, the device on startup will create a window into a 3D Scene of a hammer (Boiler Up and Hail Purdue!). Moving and tilting the device will change the camera angle of the hammer in an anchored position .<br />
+
+This project uses accelerometer, gyroscope, and magnetometer IMU sensors (I2C) to simulate the camera view of the 3D object where moving/tilting the box changes camera view direction realistically, but position is anchored (C Code). I Prototyped IMU-only position tracking, identified drift as limiting factor and redesigned around constrained motion. <br />
+
+I designed my own custom STM32 development board and sensor board using KiCad Schematic and PCB Design Software. <br />
+
+## Demo Video
 
 ## Circuit Design
-### Version 1
 #### STM32 Circuit
 <img width="568" height="762" alt="image" src="https://github.com/user-attachments/assets/303fddad-d7d7-4e21-b84f-9480f5f74530" /><br />
 This STM32 chip was chosen for its large size of pinouts and processing capabilities.
@@ -71,7 +77,7 @@ Chosen to help track real time postion of board as it moves around in space. Wil
 <img width="315" height="238" alt="image" src="https://github.com/user-attachments/assets/3162fb25-4d3a-4de8-ade6-60f83bad134b" /><br />
 
 #### Notes
-I found Google's Gemini AI tool to be extremely helpful during  this design process. Especially with mapping the pinout of the display to STM32. I used a cheap knockoff with no documentation and poor pinout labels. In the future may need to remap pins if display fails to work.See ARSensors project for 2nd Board meant to connect sensors to this main board.<br />
+I found Google's Gemini AI tool to be extremely helpful during this design process. Especially with mapping the pinout of the display to STM32. I used a cheap knockoff with no documentation and poor pinout labels. In the future may need to remap pins if display fails to work.See ARSensors project for 2nd Board meant to connect sensors to this main board.<br />
 
 Manfucaturing files can be found for each board in this repository.<br />
 
