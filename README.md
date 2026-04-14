@@ -129,6 +129,8 @@ I bought a cheap soldering station and found it pretty useful when adding the sm
 <img width="665" height="530" alt="image" src="https://github.com/user-attachments/assets/71d7bfaa-2d15-4635-99d2-65914d4bc8ba" /><br />
 
 ### Box Design
+I bought a simple project box and placed the main board inside the box. I left the sensor board on top along with the display to keep them on the same level.
+<img width="527" height="649" alt="image" src="https://github.com/user-attachments/assets/b8e64388-a0e3-476a-846f-721dc418218f" />
 
 ### Code Design
 
