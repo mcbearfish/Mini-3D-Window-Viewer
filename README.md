@@ -4,6 +4,7 @@
 -[Project Description](#Project-Description)<br />
 -[Demo Video](#Demo-Video)<br />
 -[Circuit Design](#Circuit-Design)<br />
+-[Box Design](#Box-Design)<br />
 -[Code Design](#Code)<br />
 -[Reflections](#Reflections)
 
@@ -126,6 +127,8 @@ When ordering the board I decided that to save on costs to I would hand solder s
 
 I bought a cheap soldering station and found it pretty useful when adding the smaller components. In the picture below you can see a cheaper soldering iron. I found this ok for the larger components but, I decided it was safer to spend the money and get a proper iron for the delicate items like the USB-C and STM32 chip.<br />
 <img width="665" height="530" alt="image" src="https://github.com/user-attachments/assets/71d7bfaa-2d15-4635-99d2-65914d4bc8ba" /><br />
+
+### Box Design
 
 ### Code Design
 
