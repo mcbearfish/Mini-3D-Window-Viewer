@@ -25,7 +25,7 @@ I designed my own custom STM32 development board and sensor board using KiCad Sc
 ## Demo Video
 ![image alt text](https://img.youtube.com/vi/Y7tffPQoLfw/hqdefault.jpg)
 
-[link text]([https://example.com/my-link "link title"](https://www.youtube.com/watch?v=Y7tffPQoLfw))
+[link text]([3D Window Viewer Project](https://www.youtube.com/watch?v=Y7tffPQoLfw))
 
 ## Circuit Design
 #### STM32 Circuit
