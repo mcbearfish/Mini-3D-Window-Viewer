@@ -23,6 +23,7 @@ This project uses accelerometer, gyroscope, and magnetometer IMU sensors (I2C) t
 I designed my own custom STM32 development board and sensor board using KiCad Schematic and PCB Design Software. <br />
 
 ## Demo Video
+[![https://img.youtube.com/vi/<insert-youtube-video-id-here>/hqdefault.jpg](https://img.youtube.com/vi/YOUTUBE_VIDEO_ID_HERE/0.jpg)](https://www.youtube.com/watch?v=Y7tffPQoLfw)<br />
 
 ## Circuit Design
 #### STM32 Circuit
