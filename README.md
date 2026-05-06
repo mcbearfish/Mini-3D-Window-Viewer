@@ -1,17 +1,16 @@
 # 3D Window Project
-# Table of Contents
--[About](#about)<br />
--[Project Description](#Project-Description)<br />
--[Demo Video](#Demo-Video)<br />
--[Circuit Design](#Circuit-Design)<br />
--[Box Design](#Box-Design)<br />
--[Code Design](#Code)<br />
--[Reflections](#Reflections)
 
 ## About
 This is a developmental project intended to refresh my skills on designing and programming an STM32 microcontroller board. I chose a project scope that I believed would provide difficult circuit and programming challenges. I will document the development process in this ReadMe.<br />
 
 If you stumble across this project feel free to use it for educational purposes. If you find errors or have questions about the circuit design or code feel free to reach out. Please cite this repository as a source if you plan to use it.<br />
+
+# Table of Contents
+- [Project Description](#project-description)
+- [Demo Video](#demo-video)
+- [Circuit Design](#circuit-design)
+- [Box Design](#box-design)
+- [Code Design](#code-design)
 
 ## Project Description
 This project is the 3D Window Viewer.<br />
@@ -146,7 +145,8 @@ Since position is calculated by integrating acceleration twice, even with tiny e
 I decided to pivot the project and try to get the most out of the current setup. I decided to simulate the camera view of the 3D object where moving/tilting the box changes camera view direction realistically, but position is anchored. 
 
 #### Code Flow
-'''main()
+```
+main()
 |
 +-- HAL_Init()
 +-- SystemClock_Config()
@@ -180,4 +180,4 @@ I decided to pivot the project and try to get the most out of the current setup.
     +-- Engine3D_PrepareFrame()
     +-- GPU_Render(Engine3D_DrawScene)
     \-- DrawPoseOverlay()
-  '''
+```
