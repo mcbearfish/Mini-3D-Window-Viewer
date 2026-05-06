@@ -11,18 +11,29 @@ If you stumble across this project feel free to use it for educational purposes.
 - [Circuit Design](#circuit-design)
 - [Box Design](#box-design)
 - [Code Design](#code-design)
+- [Final Result](#final-result)
 
 ## Project Description
 This project is the 3D Window Viewer.<br />
 
-When placed on a flat surface, the device on startup will create a window into a 3D Scene of a hammer (Boiler Up and Hail Purdue!). Moving and tilting the device will change the camera angle of the hammer in an anchored position.<br />
+When placed on a flat surface, the device on startup will create a window into a 3D Scene of a hammer (Boiler Up and Hail Purdue!). After startup, tilting and rotating the device updates the view of a 3D hammer while the virtual position remains anchored.<br />
 
-This project uses accelerometer, gyroscope, and magnetometer IMU sensors (I2C) to simulate the camera view of the 3D object where moving/tilting the box changes camera view direction realistically, but position is anchored (C Code). I prototyped IMU-only position tracking, identified drift as a limiting factor and redesigned around constrained motion. <br />
+This project uses I2C accelerometer, gyroscope, and magnetometer sensors to estimate device orientation in C. The original goal was IMU-only position tracking, but drift made that impractical, so I redesigned the demo around constrained motion. <br />
 
 I designed my own custom STM32 development board and sensor board using KiCad Schematic and PCB Design Software. <br />
 
 ## Demo Video
 [![Everything Is AWESOME](https://img.youtube.com/vi/Y7tffPQoLfw/hqdefault.jpg)](https://www.youtube.com/watch?v=Y7tffPQoLfw "Everything Is AWESOME")
+
+## Hardware / Software Used
+- STM32 microcontroller
+- Custom STM32 main PCB
+- Custom sensor PCB
+- Accelerometer, gyroscope, and magnetometer over I2C
+- LCD display
+- KiCad for schematic and PCB design
+- CLion IDE
+- C firmware
 
 ## Circuit Design
 #### STM32 Circuit
@@ -137,10 +148,10 @@ While prototyping I found that it was not feasible to use the IMU sensors alone 
 Since position is calculated by integrating acceleration twice, even with tiny errors, the positional data errors grew massive. It caused the position of the box to be way off and you would only see the 3D object for a split second. I determined this was unusable and decided to change scope. <br />
 
 #### Redesign
-I decided to pivot the project and try to get the most out of the current setup. I decided to simulate the camera view of the 3D object where moving/tilting the box changes camera view direction realistically, but position is anchored. 
+I decided to pivot the project and try to get the most out of the current setup. I decided to simulate the camera view of the 3D object where moving/tilting the box changes camera view direction realistically, but position is anchored. <br />
 
 #### Code Flow
-The main program initializes the board, sensors, sensor fusion, and 3D engine before entering the main loop. In the loop, new sensor data is read and fed into the sensor fusion algorithm. This project uses an Extended Kalman filter, which fuses the gyro, accelerometer, and magnetometer data into a stable orientation estimate.
+The main program initializes the board, sensors, sensor fusion, and 3D engine before entering the main loop. In the loop, new sensor data is read and passed into the sensor fusion algorithm. This project uses an Extended Kalman Filter, which fuses gyroscope, accelerometer, and magnetometer data into a stable orientation estimate. That orientation estimate is then used to update the rendered 3D object and draw the pose overlay.<br />
 ```
 main()
 |
@@ -177,3 +188,8 @@ main()
     +-- GPU_Render(Engine3D_DrawScene)
     \-- DrawPoseOverlay()
 ```
+
+## Final Result
+The final device renders a wireframe 3D hammer on the LCD. After startup calibration, tilting or rotating the physical box updates the rendered view in real time. The device uses IMU sensor fusion for orientation estimation while keeping virtual position constrained to avoid IMU drift. <br />
+
+This project was great for refreshing my bare metal embedded skills. Making a device and writing code that brings it to life is always a joy. The next project should hopefully move faster now that I have regained familarity with the whole process.
