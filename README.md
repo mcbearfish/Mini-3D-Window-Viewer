@@ -97,11 +97,6 @@ Manufacturing files can be found for each board in this repository.<br />
 
 <img width="712" height="757" alt="image" src="https://github.com/user-attachments/assets/0e8da07b-4ea0-4321-ae73-0175a2d32cb0" /><br />
 
-## Code
-
-#### Code Flowchart
-
-
 ## Reflections
 ### Circuit Design Version 1
 #### Design Process
