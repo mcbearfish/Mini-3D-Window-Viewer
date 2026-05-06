@@ -5,18 +5,20 @@ This is a developmental project intended to refresh my skills on designing and p
 
 If you stumble across this project feel free to use it for educational purposes. If you find errors or have questions about the circuit design or code feel free to reach out. Please cite this repository as a source if you plan to use it.<br />
 
-# Table of Contents
+## Table of Contents
 - [Project Description](#project-description)
 - [Demo Video](#demo-video)
+- [Hardware / Software Used](#hardware--software-used)
 - [Circuit Design](#circuit-design)
 - [Box Design](#box-design)
 - [Code Design](#code-design)
+- [Notes on AI Assistance](#notes-on-ai-assistance)
 - [Final Result](#final-result)
 
 ## Project Description
 This project is the 3D Window Viewer.<br />
 
-When placed on a flat surface, the device on startup will create a window into a 3D Scene of a hammer (Boiler Up and Hail Purdue!). After startup, tilting and rotating the device updates the view of a 3D hammer while the virtual position remains anchored.<br />
+When placed on a flat surface, the device on startup will create a window into a 3D scene of a hammer (Boiler Up and Hail Purdue!). After startup, tilting and rotating the device updates the view of a 3D hammer while the virtual position remains anchored.<br />
 
 This project uses I2C accelerometer, gyroscope, and magnetometer sensors to estimate device orientation in C. The original goal was IMU-only position tracking, but drift made that impractical, so I redesigned the demo around constrained motion. <br />
 
@@ -42,7 +44,7 @@ This STM32 chip was chosen for its large number of GPIO pins and processing capa
 
 #### Button
 <img width="395" height="284" alt="image" src="https://github.com/user-attachments/assets/5bae4b5d-869c-40eb-963d-ae59cf6c7e4d" /><br />
-Simple button circuit to test user inputs. Will be used later to 'zero' location of 3D object in virtual space.
+Simple button circuit to test user inputs.
 
 #### LEDs
 <img width="230" height="294" alt="image" src="https://github.com/user-attachments/assets/852c60a7-4242-4d3a-8030-189382736d24" /><br />
@@ -54,7 +56,7 @@ Provides a highly stable, accurate, and precise frequency reference.
 
 #### USB-C Connector
 <img width="532" height="365" alt="image" src="https://github.com/user-attachments/assets/a12726bb-a4ad-47a6-8967-1e452fd64ac1" /><br />
-Provides power to board.
+Provides power to the board.
 
 #### Boot Switch
 <img width="235" height="160" alt="image" src="https://github.com/user-attachments/assets/f280e3e0-6fc7-4074-b2d5-349e042cced1" /><br />
@@ -77,7 +79,7 @@ Chosen to estimate device orientation and motion. IMU-only position tracking was
 
 #### Magnetometer
 <img width="786" height="343" alt="image" src="https://github.com/user-attachments/assets/e504e925-99b6-4897-b088-bd03f4eafa38" /><br />
-Chosen to improve heading estimation and help correct gyro drift over time
+Chosen to improve heading estimation and help correct gyro drift over time.
 
 #### Pin Connector
 <img width="611" height="399" alt="image" src="https://github.com/user-attachments/assets/15865bf0-0dd7-4b5c-87a7-4108525f2891" /><br />
@@ -86,7 +88,7 @@ Chosen to improve heading estimation and help correct gyro drift over time
 <img width="315" height="238" alt="image" src="https://github.com/user-attachments/assets/3162fb25-4d3a-4de8-ade6-60f83bad134b" /><br />
 
 #### Notes
-I found Google's Gemini AI tool to be extremely helpful during this design process. Especially with mapping the pinout of the display to STM32. I used a cheap knockoff with no documentation and poor pinout labels. In the future may need to remap pins if display fails to work. See ARSensors project for 2nd Board meant to connect sensors to this main board.<br />
+I found Google's Gemini AI tool to be extremely helpful during this design process. Especially with mapping the pinout of the display to STM32. I used a cheap knockoff with no documentation and poor pinout labels. In the future may need to remap pins if display fails to work. See ARSensors project for second Board meant to connect sensors to this main board.<br />
 
 Manufacturing files can be found for each board in this repository.<br />
 
@@ -108,8 +110,6 @@ Manufacturing files can be found for each board in this repository.<br />
 
 <img width="712" height="757" alt="image" src="https://github.com/user-attachments/assets/0e8da07b-4ea0-4321-ae73-0175a2d32cb0" /><br />
 
-## Reflections
-### Circuit Design Version 1
 #### Design Process
 Designing my first board in almost 4 years was a great experience. In the workspace I have been living in a more software heavy environment. I found this project to be a great refresher of my skills.<br />
 
@@ -117,7 +117,7 @@ I found the initial research phase to be quite enjoyable and straightforward. I 
 
 I quickly realized this was a larger challenge than my senior design project. Although I took a significant part in the circuit design, I realized how beneficial it was having a team of 4 people in multiple disciplines. The components I selected for this project were much more sophisticated than what was chosen for the senior design project. I was honestly a little overwhelmed at the start. I had to take my time and started to break components down. I started with the most important part, the STM32 chip. <br />
 
-For the STM32 I first connected any power related pins and decoupling capacitors. Then I used the STM32CubeMX tool to assign pinouts. I knew between the display and other peripherals I needed a lot of pins, so I started by making sure the chip was capable of supporting them all. Once I verified the chip was capable I began connecting components. The most critical was the USB-C connector, which flashes code onto the chip. The USB-C will also provide power to the whole system. I spent quite a bit of time researching possible power designs. The USB-C provides 5V and I need 3.3V for the STM32 and sensors. I eventually decided on a synchronous buck converter because it would provide an efficient and stable step down from 5V to 3.3V. The display needs 5V, so I decided on a simple low pass filter because it would provide a clean signal and I have experience with designing those on circuit boards in the past.<br />
+For the STM32 I first connected any power related pins and decoupling capacitors. Then I used the STM32CubeMX tool to assign pinouts. I knew between the display and other peripherals I needed a lot of pins, so I started by making sure the chip was capable of supporting them all. Once I verified the chip was capable I began connecting components. The most critical was the USB-C connector, which flashes code onto the chip. The USB-C will also provide power to the whole system. I spent quite a bit of time researching possible power designs. The USB-C provides 5V and I need 3.3V for the STM32 and sensors. I eventually decided on a synchronous buck converter because it would provide an efficient and stable step down from 5V to 3.3V. The display needs 5V, so I decided on a simple low-pass filter because it would provide a clean signal and I have experience with designing those on circuit boards in the past.<br />
 
 Next I added the sensors. I found the datasheets to be extremely helpful. The design process was made much easier by following the typical application circuits that they detailed. Then I added the display, button, and some LEDs. The extra LEDs and button will be useful at the start of programming to make sure the board can properly run code and debug. Lastly I added a connector for debug pins.<br />
 
@@ -125,7 +125,7 @@ Now that I had a schematic to follow I moved onto the PCB layout. This portion w
 
 To minimize costs on JLCPCB I tried to identify basic parts in the JLCPCB library. Not all parts selected were in that and drove up the cost (~$3 per part not in the basic library). In the future I will place more emphasis on this to lower my costs.<br />
 
-Major Credit to Phil's Lab PCB Design video: https://www.youtube.com/watch?v=aVUqaB0IMh4. This was a great refresher on circuit board design and I highly recommend his channel.<br />
+Major credit to Phil's Lab PCB Design video: https://www.youtube.com/watch?v=aVUqaB0IMh4. This was a great refresher on circuit board design and I highly recommend his channel.<br />
 
 #### Soldering and Assembly
 When ordering the board I decided that to save on costs to I would hand solder some of the components. This involved things the STM32 chip, USB-C connector, asynchronous buck converter, buttons, and pins. I felt this was a great skill refresher. I took it slow and steady. I started with easier items like the pins and buttons to get back into the flow of things. The picture below is from right before I went to solder the STM chip.<br />
@@ -145,10 +145,10 @@ The initial goal of the project was to use the IMU sensors to track the 3D coord
 #### Limitations of IMU Sensors
 While prototyping I found that it was not feasible to use the IMU sensors alone for positional tracking. The significant position drift was too much to overcome, even with adjusting bias in the Kalman filter parameters. I also tested the individual sensors to check for noise and bias. Surprisingly, these cheaper sensors performed quite well. The accelerometer did display the most noise. I believe this was due to environmental sensitivities. Testing was performed on my desk and away from any electronics, this however does not guarantee a perfectly still environment. <br />
 
-Since position is calculated by integrating acceleration twice, even with tiny errors, the positional data errors grew massive. It caused the position of the box to be way off and you would only see the 3D object for a split second. I determined this was unusable and decided to change scope. <br />
+Since position is calculated by integrating acceleration twice, even with tiny errors, the positional data errors grew massive. The estimated position drifted so quickly that the 3D object would only remain visible for a split second. I determined this was unusable and decided to change scope. <br />
 
 #### Redesign
-I decided to pivot the project and try to get the most out of the current setup. I decided to simulate the camera view of the 3D object where moving/tilting the box changes camera view direction realistically, but position is anchored. <br />
+I decided to pivot the project and try to get the most out of the current setup. I decided to simulate the camera view of the 3D object where moving and tilting the box changes camera view direction realistically, but position is anchored. <br />
 
 #### Code Flow
 The main program initializes the board, sensors, sensor fusion, and 3D engine before entering the main loop. In the loop, new sensor data is read and passed into the sensor fusion algorithm. This project uses an Extended Kalman Filter, which fuses gyroscope, accelerometer, and magnetometer data into a stable orientation estimate. That orientation estimate is then used to update the rendered 3D object and draw the pose overlay.<br />
@@ -189,7 +189,12 @@ main()
     \-- DrawPoseOverlay()
 ```
 
+## Notes on AI Assistance
+Portions of the firmware were developed with assistance from AI tools, including OpenAI Codex and Google's Gemini. I used these tools to help generate code structure, debug embedded issues and tune parts of the sensor-fusion pipeline. All AI-assisted code was reviewed, tested, and modified by me before being included in the final project. <br />
+
+I found Codex especially useful for working through embedded C issues and code organization. Gemini was useful during early design exploration, especially for brainstorming and pin-mapping support, but I had to review its output carefully because it sometimes suggested larger code changes than intended. <br />
+
 ## Final Result
 The final device renders a wireframe 3D hammer on the LCD. After startup calibration, tilting or rotating the physical box updates the rendered view in real time. The device uses IMU sensor fusion for orientation estimation while keeping virtual position constrained to avoid IMU drift. <br />
 
-This project was great for refreshing my bare metal embedded skills. Making a device and writing code that brings it to life is always a joy. The next project should hopefully move faster now that I have regained familarity with the whole process.
+This project was great for refreshing my bare-metal embedded skills. Making a device and writing code that brings it to life is always a joy. The next project should hopefully move faster now that I have regained familiarity with the whole process.
